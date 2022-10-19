@@ -12,6 +12,8 @@
         <link href="css/bootstrap.min.css" media="screen" rel="stylesheet">
         <!--fonrawesome css -->
         <link rel="stylesheet" href="css/font-awesome.css">
+        <!--parallax effect css -->
+        <link rel="stylesheet" href="css/jarallax.css">
         <!-- Slick slider css -->
         <link href="css/slick.css" rel="stylesheet">
         <link href="css/slick-theme.css" rel="stylesheet">
@@ -67,89 +69,98 @@
     <!-- header end -->
 
     <!-- banner section start -->
-    <section class="banner_section">
+    <section class="banner_section jarallax" >
         <div class="container">
-            <div class="banner_box">
-                <h1>THINK <br> like an engineer</h1>
-                <p>Build a toy each month a longside Mark Rober!</p>
+            <div class="banner_box " >
+                <h1 data-jarallax-element="-200 0">THINK <br> like an engineer</h1>
+                <p >Build a toy each month a longside Mark Rober!</p>
                 <div class="yello_tringle">
                     <img src="images/yellow_arrow.png" alt="">
                 </div>
-                <div class="banner_btns">
-                    <a href="" class="cmn_btns bgBtn">Get Started</a>
-                    <a href="" class="cmn_btns brdBtn"><span>Gift It</span></a>
+                <div class="banner_btns ">
+                    <a href="" class="cmn_btns bgBtn"  >Get Started</a>
+                    <a href="" class="cmn_btns brdBtn"  ><span>Gift It</span></a>
                 </div>
             </div>
+        </div>
+
+        <div class="exp_btn">
+            <a class="scrollTo" href="#banner_scroll">Explore <i class="far fa-arrow-down"></i></a>
         </div>
     </section>
     <!-- banner section end -->
 
     <!-- product section start -->
-    <section class="product_section">
+    <section id="banner_scroll" class="product_section">
         <div class="container">
             <div class="ps_wrap">
                 <div class="ps_heading">
-                    <h5>pour your best cup with</h5>
+                    <h5 >pour your best cup with</h5>
                     <h2>our best sellers</h2>
                 </div>
                 <div class="ps_slider">
                     <div class="ps_slide1">
-                        <div class="ps_box">
-                            <div class="ps_img">
-                                <img src="images/p1.png" alt="">
-                            </div>
-                            <div class="star-rating">
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <div class="p_details">
-                                <h5>Coffee French Press P6</h5>
-                                <div class="pRate">
-                                    <p>$89.95 <span>$99.95</span></p>
+                        <a href="#">
+                            <div class="ps_box">
+                                <div class="ps_img">
+                                    <img src="images/p1.png" alt="">
                                 </div>
-                                <div class="color_varient">
-                                    <span class="cv1 cv1--c1"></span>
-                                    <span class="cv1 cv1--c2"></span>
-                                    <span class="cv1 cv1--c3"></span>
-                                    <span class="cv1 cv1--c4"></span>
-                                    <span class="cv1 cv1--c5"></span>
-                                    <span class="cv1 cv1--c6"></span>
+                                <div class="star-rating">
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="p_details">
+                                    <h5>Coffee French Press P6</h5>
+                                    <div class="pRate">
+                                        <p>$89.95 <span>$99.95</span></p>
+                                    </div>
+                                    <div class="color_varient">
+                                        <span class="cv1 cv1--c1"></span>
+                                        <span class="cv1 cv1--c2"></span>
+                                        <span class="cv1 cv1--c3"></span>
+                                        <span class="cv1 cv1--c4"></span>
+                                        <span class="cv1 cv1--c5"></span>
+                                        <span class="cv1 cv1--c6"></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="ps_slide1">
-                        <div class="ps_box">
-                            <div class="ps_img">
-                                <img src="images/p2.png" alt="">
-                            </div>
-                            <div class="star-rating">
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                              <div class="p_details">
-                                <h5>Coffee French Press P6</h5>
-                                <div class="pRate">
-                                    <p>$89.95 <span>$99.95</span></p>
+                        <a href="#">
+                            <div class="ps_box">
+                                <div class="ps_img">
+                                    <img src="images/p2.png" alt="">
                                 </div>
-                                <div class="color_varient">
-                                    <span class="cv1 cv1--c1"></span>
-                                    <span class="cv1 cv1--c2"></span>
-                                    <span class="cv1 cv1--c3"></span>
-                                    <span class="cv1 cv1--c4"></span>
-                                    <span class="cv1 cv1--c5"></span>
-                                    <span class="cv1 cv1--c6"></span>
+                                <div class="star-rating">
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
                                 </div>
-                              </div>
-                        </div>
+                                  <div class="p_details">
+                                    <h5>Coffee French Press P6</h5>
+                                    <div class="pRate">
+                                        <p>$89.95 <span>$99.95</span></p>
+                                    </div>
+                                    <div class="color_varient">
+                                        <span class="cv1 cv1--c1"></span>
+                                        <span class="cv1 cv1--c2"></span>
+                                        <span class="cv1 cv1--c3"></span>
+                                        <span class="cv1 cv1--c4"></span>
+                                        <span class="cv1 cv1--c5"></span>
+                                        <span class="cv1 cv1--c6"></span>
+                                    </div>
+                                  </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="ps_slide1">
+                       <a href="#">
                         <div class="ps_box">
                             <div class="ps_img">
                                 <img src="images/p3.png" alt="">
@@ -177,8 +188,10 @@
                                 </div>
                             </div>
                         </div>
+                       </a>
                     </div>
                     <div class="ps_slide1">
+                     <a href="#">
                         <div class="ps_box">
                             <div class="ps_img">
                                 <img src="images/p4.png" alt="">
@@ -205,8 +218,10 @@
                                 </div>
                               </div>
                         </div>
+                     </a>
                     </div>
                     <div class="ps_slide1">
+                       <a href="#">
                         <div class="ps_box">
                             <div class="ps_img">
                                 <img src="images/p1.png" alt="">
@@ -233,8 +248,10 @@
                                 </div>
                             </div>
                         </div>
+                       </a>
                     </div>
                     <div class="ps_slide1">
+                       <a href="#">
                         <div class="ps_box">
                             <div class="ps_img">
                                 <img src="images/p2.png" alt="">
@@ -259,31 +276,35 @@
                                 </div>
                               </div>
                         </div>
+                       </a>
                     </div>
                     <div class="ps_slide1">
-                        <div class="ps_box">
-                            <div class="ps_img">
-                                <img src="images/p3.png" alt="">
-                            </div>
-                            <div class="star-rating">
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                                <i class="active fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <div class="p_details">
-                                <h5>Coffee French Press P6</h5>
-                                <div class="pRate">
-                                    <p>$89.95 <span>$99.95</span></p>
+                        <a href="#">
+                            <div class="ps_box">
+                                <div class="ps_img">
+                                    <img src="images/p3.png" alt="">
                                 </div>
-                                <div class="color_varient">
-                                    <span class="cv1 cv1--c1"></span>
+                                <div class="star-rating">
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                    <i class="active fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="p_details">
+                                    <h5>Coffee French Press P6</h5>
+                                    <div class="pRate">
+                                        <p>$89.95 <span>$99.95</span></p>
+                                    </div>
+                                    <div class="color_varient">
+                                        <span class="cv1 cv1--c1"></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="ps_slide1">
+                      <a href="#">
                         <div class="ps_box">
                             <div class="ps_img">
                                 <img src="images/p4.png" alt="">
@@ -308,6 +329,7 @@
                                 </div>
                               </div>
                         </div>
+                      </a>
                     </div>
                     
                 </div>
@@ -328,12 +350,30 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="g_left">
-                            
+                            <div class="li1">
+                                <img   src="images/r4.jpg" alt="">
+                            </div>
+                            <div class="li2 jarallax">
+                                <img data-jarallax-element="-200 0" src="images/r5.jpg" alt="">
+                            </div>
+                            <div class="li3">
+                                <img   src="images/r6.jpg" alt="">
+                            </div>
+                           
+                           
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="g_right">
-
+                            <div class="li4 ">
+                                <img   src="images/r2.jpg" alt="">
+                            </div>
+                            <div class="li5 jarallax">
+                                <img data-jarallax-element="-200 0" src="images/r4.jpg" alt="">
+                            </div>
+                            <div class="li6 jarallax">
+                                <img   src="images/r3.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -349,10 +389,18 @@
 <script src="js/jquery-3.4.1.js"></script>
 <!-- Bootstrap js file -->
 <script src="js/bootstrap.min.js "></script>
-<!-- owl slider js -->
+<!-- parallax effect js file -->
+<script src="js/jarallax.js"></script>
+<script src="js/jarallax-element.js"></script>
+<!-- slick slider js -->
 <script src="js/slick.min.js"></script>
 <!-- Main js file -->
 <script src="js/script.js "></script>
+<script>
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.5,
+    });
+</script>
 
 </body>
 </html>

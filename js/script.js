@@ -33,5 +33,24 @@ $(document).ready(function(){
         }
       ]
     });
+
+    $('.scrollTo').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+      return false;
+  });
+  
+
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 150) {
+        $("header").addClass("sticky");
+    }
+    else{
+      $("header").removeClass("sticky");
+    }
+  }); 
    
 });

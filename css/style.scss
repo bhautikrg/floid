@@ -172,6 +172,28 @@ input:focus {
         font-family: $BarlowCondensed;
     }
 }
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); }
+    100% {
+      opacity: 1;
+      transform: translateY(0); } }
+
+.sticky {
+    position: fixed;
+    background-color: #fff !important;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    @include box-shadow(0 1px 2px rgb(0 0 0 / 10%));
+    animation-name: fadeInDown;
+    animation-duration: .5s;
+}
+.sticky .heder_top{
+    display: none;
+}
 
 // 02. Header css end
 
@@ -181,6 +203,7 @@ input:focus {
     padding: 110px 0 175px 0;
     background-size: cover;
     background-position: center center;
+    position: relative;
     .banner_box{
         position: relative;
         width: 632px;
@@ -278,6 +301,27 @@ input:focus {
         }
         
     }
+    .exp_btn{
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        a{
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: 700;
+            font-family: $Josefin;
+            text-align: center;
+            @include transition(all 0.5s);
+            &:hover{
+                color: $bg2;
+            }
+               
+            
+        }
+    }
 }
 div.btn1 {
     position:relative;
@@ -325,6 +369,30 @@ div.btn1 {
         margin-top: 50px;
         .ps_slide1{
             margin: 0 15px;
+            a{
+
+                .ps_box{
+                    width: 100%;
+                    @include transition(all 0.5s);
+                    .ps_img{
+                        background: $bg4;
+                        height: 295px;
+                        position: relative;
+                        width: 100%;
+                        @include flex;
+                        @include align-items(center);
+                        @include justify-content(center);
+                        img{
+                           object-fit: contain;
+                        }
+                    }
+                }
+                &:hover{
+                    .ps_box{
+                        margin-top: -5px;
+                    }
+                }
+            }
         }
         .slick-prev, .slick-next{
             width: 46px;
@@ -356,21 +424,7 @@ div.btn1 {
         }
     }
 }
-.ps_box{
-    width: 100%;
-    .ps_img{
-        background: $bg4;
-        height: 295px;
-        position: relative;
-        width: 100%;
-        @include flex;
-        @include align-items(center);
-        @include justify-content(center);
-        img{
-           object-fit: contain;
-        }
-    }
-}
+
 .star-rating {
     padding: 15px 15px 0 15px;
     i {
@@ -476,6 +530,47 @@ div.btn1 {
             font-family: $Nunito;
             text-align: center;
             margin-top: 20px;
+
+        }
+    }
+    .g_left{
+        margin-top: -160px;
+        position: relative;
+        .li1{
+            img{
+                margin-top: -50px;
+            }
+        }
+        .li2{
+            position: absolute;
+            right: 7%;
+            bottom: 21%;
+            z-index: 1;
+        }
+        .li3{
+           width: 100%;
+           padding-top: 50px;
+        }
+    }
+    .g_right{
+        text-align: right;
+        margin-top: -170px;
+        .li4{
+            img{
+                margin-top: -50px;
+            }
+        }
+        .li5{
+            padding-right: 140px;
+            z-index: 1;
+            // img{
+            //     margin-top: -20%;
+            // }
+        }
+        .li6{
+           img{
+            margin-top: -150px;
+           }
 
         }
     }
